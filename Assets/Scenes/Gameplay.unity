@@ -1357,7 +1357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db16c6894dbc54599baecbecf007b5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseButton: {fileID: 0}
+  pauseButton: {fileID: 65183120}
   healthPoint:
   - {fileID: 74824274}
   - {fileID: 686915707}
@@ -1371,7 +1371,7 @@ MonoBehaviour:
   - {fileID: 31450511}
   - {fileID: 696986245}
   - {fileID: 1343452639}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 469977506}
 --- !u!4 &988589277
 Transform:
   m_ObjectHideFlags: 0
