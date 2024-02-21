@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: SharkIT
   productName: Aviator2
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -44,8 +44,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
-  defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 9
+  defaultScreenHeightWeb: 16
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0
+  bundleVersion: 1.0.0.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -503,12 +503,35 @@ PlayerSettings:
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
-  m_TemplateCustomTags: {}
+  m_TemplateCustomTags:
+    CHOOSE_LOADING_TYPE: 4
+    CONFIGURE_SHADOWS_AROUND_CANVAS: 
+    CONNECT_PLUGIN: YG1.6.1
+    CUSTOMIZE_BARS_BACKGROUND: backgroundColor = "#00BFFF"
+    CUSTOMIZE_LOADING_SCREEN_BACKGROUND: 
+    CUSTOMIZE_LOGO: backgroundImage = "url('aviaicon.png')"
+    CUSTOM_EVENT_IN_CSS: 
+    CUSTOM_EVENT_IN_HTML: <script src="https://yandex.ru/games/sdk/v2"></script>
+    CUSTOM_EVENT_IN_JS: YaGames.init().then(ysdk=>{console.log("Yandex SDK initialized");window.ysdk=ysdk;ysdk.adv.showFullscreenAdv();});
+    DISABLE_CONSOLE_MESSAGES: 
+    GP_GAMEREADY_AUTOCALL_DELAY: 
+    GP_PROJECT_ID: 
+    GP_SHOW_PRELOADER_AD: 
+    GP_TOKEN: 
+    IGB_GAME_DISTRIBUTION_GAME_ID: 
+    LOCK_ASPECT_RATIO: all
+    WORKER_FILENAME: 
+    YG_BANNER_DYNAMIC_1: 
+    YG_BANNER_DYNAMIC_2: 
+    YG_BANNER_STATIC_1: 
+    YG_BANNER_STATIC_2: 
   mobileMTRendering:
     Android: 1
     iPhone: 1
     tvOS: 1
-  m_BuildTargetGroupLightmapEncodingQuality: []
+  m_BuildTargetGroupLightmapEncodingQuality:
+  - m_BuildTarget: WebGL
+    m_EncodingQuality: 0
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetNormalMapEncoding: []
   m_BuildTargetDefaultTextureCompressionFormat:
@@ -754,16 +777,17 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: APPLICATION:Default
+  webGLTemplate: PROJECT:AT2.0.7
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 0
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  webGLDecompressionFallback: 0
+  webGLDecompressionFallback: 1
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    WebGL: YG_PLUGIN_YANDEX_GAME
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
@@ -787,7 +811,7 @@ PlayerSettings:
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   enableRoslynAnalyzers: 1
-  selectedPlatform: 0
+  selectedPlatform: 4
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 1
